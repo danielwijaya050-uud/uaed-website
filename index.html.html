@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAED - Uang Edukasi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1622630998477-d5d895a8f54a') no-repeat center center fixed;
+      background-size: cover;
+      color: #f1f1f1;
+      border-top: 12px solid gold;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      color: #f1f1f1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: gold;
+    }
+    nav {
+      text-align: center;
+      margin: 20px;
+    }
+    nav a {
+      background: gold;
+      color: black;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background: #ffd700cc;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: 25px auto;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      color: #222;
+    }
+    section h2 {
+      color: #1a1a1a;
+      margin-bottom: 18px;
+      border-bottom: 2px solid gold;
+      padding-bottom: 6px;
+    }
+    img.icon {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 18px;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: #f1f1f1;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+    .page {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .page.active {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UAED - Uang Edukasi</h1>
+    <p>Mengedukasi manusia tentang uang, sumber daya, dan kehidupan finansial di era modern</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('page1')">Halaman 1</a>
+    <a href="#" onclick="showPage('page2')">Halaman 2</a>
+  </nav>
+
+  <div id="page1" class="page active">
+    <section>
+      <img src="https://images.unsplash.com/photo-1649972904349-25bfdd8d9f64" alt="Evolusi Uang" class="icon">
+      <h2>Uang: Bukan Tujuan Akhir</h2>
+      <p>Uang adalah simbol nilai, kerja keras, dan kepercayaan. Namun, uang bukanlah tujuan akhir. Dari barter sederhana, emas, hingga Bitcoin, semuanya hanyalah alat yang mempermudah manusia mencapai kehidupan yang lebih baik. Pemahaman ini penting, karena banyak orang terjebak mengejar uang tanpa menyadari bahwa nilai sejati ada pada kebijaksanaan dalam menggunakannya.</p>
+    </section>
+
+    <section style="background: url('https://images.unsplash.com/photo-1622630998120-d3a3a4f3a6d2?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover; border-radius:14px;">
+      <div style="background: rgba(255,255,255,0.85); padding:20px; border-radius:14px;">
+        <h2>Bitcoin & Kripto</h2>
+        <p>Mata uang digital seperti Bitcoin menghadirkan revolusi keuangan modern. Kripto membebaskan transaksi dari batasan negara dan bank, membuka peluang baru untuk investor visioner. Namun, volatilitas tinggi menuntut pemahaman mendalam. Bagi miliarder dan pemimpin masa depan, kripto bukan sekadar spekulasi, melainkan instrumen untuk mengubah peta ekonomi dunia.</p>
+      </div>
+    </section>
+  </div>
+
+  <div id="page2" class="page">
+    <section>
+      <img src="https://images.unsplash.com/photo-1581090700227-4c4f50ecf1cf" alt="AI dan Uang" class="icon">
+      <h2>AI dan Masa Depan Uang</h2>
+      <p>Kecerdasan buatan (AI) mengubah cara manusia mengelola uang. Aplikasi pintar kini mampu mengatur keuangan, membaca pola pengeluaran, hingga merancang strategi investasi. Namun, AI tetaplah alat: nilai kreativitas, intuisi, dan keputusan strategis manusia tetap tak tergantikan. Orang yang mampu memadukan AI dengan kebijaksanaan finansial akan menjadi pemenang di masa depan.</p>
+    </section>
+
+    <section style="background: url('https://images.unsplash.com/photo-1518546305927-5a555bb7020a?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover; border-radius:14px;">
+      <div style="background: rgba(255,255,255,0.85); padding:20px; border-radius:14px;">
+        <h2>Uang Kertas & Koin</h2>
+        <p>Uang kertas dan koin tetap menjadi simbol nyata kepercayaan manusia pada sistem moneter. Meski dunia beralih ke digital, uang fisik tetap memegang peran penting. Bagi para pebisnis besar dan miliarder, memahami keseimbangan antara uang fisik dan digital adalah kunci untuk menjaga kekuatan finansial global.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>UAED: Filosofi Uang Edukasi</h2>
+      <p>UAED hadir bukan untuk anak-anak, melainkan untuk para pemimpin, visioner, dan generasi cerdas yang ingin menguasai permainan finansial. Uang bukan tujuan, melainkan sarana untuk membangun peradaban, memberi dampak positif, dan menciptakan kebebasan sejati. Edukasi uang di tingkat tinggi menuntut kita berpikir layaknya miliarder: strategis, visioner, dan penuh makna.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 UAED - Uang Edukasi | Dibuat untuk visi finansial tingkat tinggi</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
